@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "companies": {
+      "collection": "companies"
+    },
+    "offers": {
+      "collection": "offers"
+    },
+    "products": {
+      "collection": "products"
+    }
+  }
+}

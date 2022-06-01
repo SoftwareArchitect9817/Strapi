@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "press",
+  "info": {
+    "name": "Press",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "label": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "labelColor": {
+      "type": "enumeration",
+      "enum": [
+        "green",
+        "pink",
+        "blue",
+        "yellow",
+        "violet"
+      ]
+    },
+    "position": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

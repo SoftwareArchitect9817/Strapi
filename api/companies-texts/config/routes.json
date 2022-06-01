@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/companies-texts",
+      "handler": "companies-texts.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/companies-texts/count",
+      "handler": "companies-texts.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/companies-texts/:id",
+      "handler": "companies-texts.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/companies-texts",
+      "handler": "companies-texts.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/companies-texts/:id",
+      "handler": "companies-texts.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/companies-texts/:id",
+      "handler": "companies-texts.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

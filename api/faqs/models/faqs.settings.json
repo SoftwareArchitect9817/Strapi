@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faqs",
+  "info": {
+    "name": "faqs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "order": {
+      "type": "integer",
+      "unique": false,
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "general",
+        "car",
+        "moto",
+        "home",
+        "warranty"
+      ]
+    }
+  }
+}

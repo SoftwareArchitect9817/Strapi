@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies_texts",
+  "info": {
+    "name": "CompaniesTexts",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Company": {
+      "type": "string"
+    },
+    "insuranceId": {
+      "type": "integer"
+    },
+    "PhoneSinister": {
+      "type": "string"
+    },
+    "PhoneGeneral": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    },
+    "GoogleApp": {
+      "type": "string"
+    },
+    "IosApp": {
+      "type": "string"
+    }
+  }
+}

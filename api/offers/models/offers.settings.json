@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offers",
+  "info": {
+    "name": "Offers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "label": {
+      "type": "string"
+    },
+    "labelColor": {
+      "type": "enumeration",
+      "enum": [
+        "pink",
+        "yellow",
+        "green",
+        "blue"
+      ]
+    },
+    "link": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "vertical",
+        "horizontal"
+      ]
+    }
+  }
+}
